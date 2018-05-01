@@ -4,7 +4,7 @@
 #           #
 #############
 
-# Written badly by ShiftyWizard and ME YOU FUCKS
+# Written badly by ShiftyWizard and 2 other punks ololol
 
 #Importing Requirements
 import discord
@@ -41,11 +41,11 @@ async def on_message(message):
 	if not client.user.id == message.author.id:
 		global txtout
 		if message.content.lower().startswith(prefix+'test'):
-			print(':robot:')
+			print(':robot: sent')
 			await client.send_message(message.channel, ':robot:')
 		
 		elif message.content.lower().startswith(prefix+'info'):
-			print('BOT INFO')
+			print('Bot information sent')
 			embed = discord.Embed(title="BOT INFO", description="Made by @ShiftyWizard#4823, @badmotherforker#0098 & @Arboreal#4200 for fun.", url="https://github.com/leaharboreal/bot", color=0x1abc9c)
 			embed.set_thumbnail(url="https://raw.githubusercontent.com/leaharboreal/bot/master/profilepic.png")
 			embed.set_footer(text="© bot | 2018", icon_url="https://raw.githubusercontent.com/leaharboreal/bot/master/profilepic.png")
@@ -56,7 +56,7 @@ async def on_message(message):
 			f = open(os.path.join('quotes',str(message.server.id+'.txt')),'a+')
 			quotemessage = message.content[10:].split("|")
 			f.write(quotemessage[0] + "|" + quotemessage[1]+'\n')
-			print("Added Quote to file "+message.server.id+".txt: "+str(quotemessage))
+			print("Added quote to file "+message.server.id+".txt: "+str(quotemessage))
 			await client.send_message(message.channel,":white_check_mark:")
 			f.close()
 		#PICK RANDOM USER QUOTE#
@@ -185,15 +185,17 @@ async def on_message(message):
 		#FLIP A COIN#
 		elif message.content.lower().startswith(prefix+'flip'):
 			embed = discord.Embed(title="Flip", description=random.choice(['Heads','Tails']), color=0xeee657)
+			print("Coin flipped")
 			await client.send_message(message.channel, embed=embed)
 		
+		#SEND EMOTES#
 		elif message.content.lower().startswith(prefix+'emotes'):
 			txtout=""
 			with open('emotes.txt','r') as file:
 				lines=list(file)
 			for x in range(int(message.content.lower().split(" ")[1])):
 				txtout += str(random.choice(lines)).rstrip()
-			print(message.content.lower().split(" ")[1]+" emojis")
+			print(message.content.lower().split(" ")[1]+" emotes sent.")
 			
 			await client.send_message(message.channel,txtout)
 
@@ -209,16 +211,17 @@ async def on_message(message):
 			print(txtout+' '+str(txtin['compound']))
 			await client.send_message(message.channel,txtout)
 		
+		#GARBAGE MEME 2.0#
 		elif 'oopsie' in message.content.lower().split(" "):
 			txtout="OOPSIE WOOPSIE!! Uwu We make a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!"
-			print(txtout)
+			print("uWu sent")
 			await client.send_message(message.channel,txtout)
 
 		#GARBAGE MEME#
 		elif 'pee stream' in message.content:
 			embed = discord.Embed(color=0xeee657)
 			embed.set_image(url="https://cdn.discordapp.com/attachments/260061122193784833/404628539728723969/chrome_2018-01-07_20-25-17.jpg")
-			print("Pee Stream")
+			print("Pee Stream sent")
 			await client.send_message(message.channel,embed=embed)
 with open("bottoken_topsecret.txt","r") as bottoken:
 	client.run(str(bottoken.read()))
