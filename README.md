@@ -41,6 +41,6 @@ Dadbot|`I'm <message>`|Replies to user with the side splittingly hilarious 'Hi, 
 `.rate`|`.rate <text>`|Randomly rates the supplied text out of 10.
 `.flip`|`.flip`|Flip a coin, returns heads or tails.
 `bot`|any message containing `bot`|Uses sentiment analysis to respond to comments about bot. Yes, it is overkill. 
-`pee stream`|Garbage local meme
-`oopsie`|uWu
-`.emotes`|Picks some random emotes (WIP)
+`pee stream`|`pee stream`|Garbage local meme
+`oopsie`|`oopsie`|uWu
+`.emotes`|`.emotes <number>`|Picks some random emotes (WIP)
