@@ -1,5 +1,5 @@
 # bot
-bot beta branch
+bot beta branch for littlebigbepis server and others 
 ![alt text](https://raw.githubusercontent.com/leaharboreal/bot/master/profilepic.png "bot's profile picture")
 
 ## Originallo
