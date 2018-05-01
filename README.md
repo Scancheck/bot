@@ -2,27 +2,8 @@
 bot beta branch
 ![alt text](https://raw.githubusercontent.com/leaharboreal/bot/master/profilepic.png "bot's profile picture")
 
-## Setup
-### Host bot yourself
-1. Install Python 3
-2. Install all [dependencies](https://github.com/leaharboreal/bot#dependencies).
-[Hyphenate.py](https://nedbatchelder.com/code/modules/hyphenate.html "Ned Batchelder's Webpage") should be placed in the root directory (The directory containing `discordbot.py`)
-3. Create the quotes directory in the root directory (`\quotes\`). This is where your quotes will be placed.
-5. If you haven't already, create an application [on this page](https://discordapp.com/developers/applications/me "Discord Developer")
-4. Create a text file only containing your private discord bot token. This file must be encoded in **UTF-8**, and named `bottoken_topsecret.txt`. This file should **not** be publicly available.
-6. Invite your bot to a server with your OAuth link that can be generated on the discord website.
-
-### Invite bot to your server
-Unfortunately this is not currently viable as bot is still very much a work in progress, although it is a future goal to make the bot public. 
-If you *really* want, contact [@ShiftyWizard#4823, @arboreal#4200 @badmotherforker#0098](http://discord.gg/YKbEgNp "Click to join Arboreal's Discord Server") and we may be able to figure something out. 
-
-## Dependencies
----
-* [hyphenate.py](https://nedbatchelder.com/code/modules/hyphenate.html "Ned Batchelder's Webpage") by Ned Batchelder (2007). Used for the `smush` command. Should be located in the root folder (The directory with `discordbot.py`)
-* [discord.py](https://github.com/Rapptz/discord.py "python3 -m pip install -U discord.py") for discord integration, only text is required at this time. 
-* [NLTK](https://github.com/nltk/nltk "pip install -U nltk") Used for the `verbose` and `succinct` commands. 
- * Wordnet
- * Vader
+## Originallo
+https://github.com/leaharboreal/bot
 
 ## Command List
 ---
